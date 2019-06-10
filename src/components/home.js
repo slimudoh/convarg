@@ -1,10 +1,14 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 import MainNav from "./../partials/main_nav";
 import Footer from "./../partials/footer";
-import Carousel from "react-bootstrap/Carousel";
+// import Carousel from "react-bootstrap/Carousel";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 
 export default function Home() {
+  const [resp] = useState({ 1024: { items: 3 } });
+
   const goToTop = () => {
     window.scrollTo(0, 0);
   };
@@ -371,296 +375,196 @@ export default function Home() {
           <img src={require("./../assets/img/test.jpg")} alt="" />
         </div>
         <div className="home__container--test-bottom">
-          <Carousel>
-            <Carousel.Item>
-              <div className="home__container--test-bottom-slider">
-                <div style={{ backgroundColor: "#0f295a" }}>
-                  <div className="home__container--test-bottom-quote">
-                    <div>
-                      <img
-                        src={require("./../assets/img/white-quote.png")}
-                        alt=""
-                      />
-                    </div>
-                    <div>
-                      <img
-                        src={require("./../assets/img/white-quote.png")}
-                        alt=""
-                      />
-                    </div>
+          <AliceCarousel responsive={resp} buttonsDisabled={true}>
+            <div className="home__container--test-bottom-slider">
+              <div style={{ backgroundColor: "#0f295a" }}>
+                <div className="home__container--test-bottom-quote">
+                  <div>
+                    <img
+                      src={require("./../assets/img/white-quote.png")}
+                      alt=""
+                    />
                   </div>
-                  <p style={{ color: "#fff" }}>
-                    Working together with our partners, we can help make
-                    pregnancy and childbirth a safe, healthy, and joyful
-                    experience for women.
-                  </p>
+                  <div>
+                    <img
+                      src={require("./../assets/img/white-quote.png")}
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <p style={{ color: "#fff" }}>
+                  Working together with our partners, we can help make pregnancy
+                  and childbirth a safe, healthy, and joyful experience for
+                  women.
+                </p>
 
-                  <span
-                    className="home__container--test-span-one"
-                    style={{ color: "#fff" }}
-                  >
-                    Chidi Ogwu /
-                  </span>
-                  <span
-                    className="home__container--test-span-two"
-                    style={{ color: "#fff" }}
-                  >
-                    CNN News
-                  </span>
-                </div>
+                <span
+                  className="home__container--test-span-one"
+                  style={{ color: "#fff" }}
+                >
+                  Chidi Ogwu /
+                </span>
+                <span
+                  className="home__container--test-span-two"
+                  style={{ color: "#fff" }}
+                >
+                  CNN News
+                </span>
               </div>
-              <div className="home__container--test-bottom-slider">
-                <div>
-                  <div className="home__container--test-bottom-quote">
-                    <div>
-                      <img
-                        src={require("./../assets/img/blue-quote.png")}
-                        alt=""
-                      />
-                    </div>
-                    <div>
-                      <img
-                        src={require("./../assets/img/blue-quote.png")}
-                        alt=""
-                      />
-                    </div>
+            </div>
+            <div className="home__container--test-bottom-slider">
+              <div>
+                <div className="home__container--test-bottom-quote">
+                  <div>
+                    <img
+                      src={require("./../assets/img/blue-quote.png")}
+                      alt=""
+                    />
                   </div>
-                  <p>
-                    Working together with our partners, we can help make
-                    pregnancy and childbirth a safe, healthy, and joyful
-                    experience for women.
-                  </p>
-                  <span className="home__container--test-span-one">
-                    Musa Hammed /
-                  </span>
-                  <span className="home__container--test-span-two">
-                    TVC Studio
-                  </span>
+                  <div>
+                    <img
+                      src={require("./../assets/img/blue-quote.png")}
+                      alt=""
+                    />
+                  </div>
                 </div>
+                <p>
+                  Working together with our partners, we can help make pregnancy
+                  and childbirth a safe, healthy, and joyful experience for
+                  women.
+                </p>
+                <span className="home__container--test-span-one">
+                  Musa Hammed /
+                </span>
+                <span className="home__container--test-span-two">
+                  TVC Studio
+                </span>
               </div>
-              <div className="home__container--test-bottom-slider">
-                <div>
-                  <div className="home__container--test-bottom-quote">
-                    <div>
-                      <img
-                        src={require("./../assets/img/blue-quote.png")}
-                        alt=""
-                      />
-                    </div>
-                    <div>
-                      <img
-                        src={require("./../assets/img/blue-quote.png")}
-                        alt=""
-                      />
-                    </div>
+            </div>
+            <div className="home__container--test-bottom-slider">
+              <div>
+                <div className="home__container--test-bottom-quote">
+                  <div>
+                    <img
+                      src={require("./../assets/img/blue-quote.png")}
+                      alt=""
+                    />
                   </div>
-                  <p>
-                    Working together with our partners, we can help make
-                    pregnancy and childbirth a safe, healthy, and joyful
-                    experience for women.
-                  </p>
-                  <span className="home__container--test-span-one">
-                    Jen Park /
-                  </span>
-                  <span className="home__container--test-span-two">
-                    NewYork Times
-                  </span>
+                  <div>
+                    <img
+                      src={require("./../assets/img/blue-quote.png")}
+                      alt=""
+                    />
+                  </div>
                 </div>
+                <p>
+                  Working together with our partners, we can help make pregnancy
+                  and childbirth a safe, healthy, and joyful experience for
+                  women.
+                </p>
+                <span className="home__container--test-span-one">
+                  Jen Park /
+                </span>
+                <span className="home__container--test-span-two">
+                  NewYork Times
+                </span>
               </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="home__container--test-bottom-slider">
-                <div style={{ backgroundColor: "#0f295a" }}>
-                  <div className="home__container--test-bottom-quote">
-                    <div>
-                      <img
-                        src={require("./../assets/img/white-quote.png")}
-                        alt=""
-                      />
-                    </div>
-                    <div>
-                      <img
-                        src={require("./../assets/img/white-quote.png")}
-                        alt=""
-                      />
-                    </div>
+            </div>
+            <div className="home__container--test-bottom-slider">
+              <div style={{ backgroundColor: "#0f295a" }}>
+                <div className="home__container--test-bottom-quote">
+                  <div>
+                    <img
+                      src={require("./../assets/img/white-quote.png")}
+                      alt=""
+                    />
                   </div>
-                  <p style={{ color: "#fff" }}>
-                    Working together with our partners, we can help make
-                    pregnancy and childbirth a safe, healthy, and joyful
-                    experience for women.
-                  </p>
+                  <div>
+                    <img
+                      src={require("./../assets/img/white-quote.png")}
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <p style={{ color: "#fff" }}>
+                  Working together with our partners, we can help make pregnancy
+                  and childbirth a safe, healthy, and joyful experience for
+                  women.
+                </p>
 
-                  <span
-                    className="home__container--test-span-one"
-                    style={{ color: "#fff" }}
-                  >
-                    Chidi Ogwu /
-                  </span>
-                  <span
-                    className="home__container--test-span-two"
-                    style={{ color: "#fff" }}
-                  >
-                    CNN News
-                  </span>
-                </div>
+                <span
+                  className="home__container--test-span-one"
+                  style={{ color: "#fff" }}
+                >
+                  Chidi Ogwu /
+                </span>
+                <span
+                  className="home__container--test-span-two"
+                  style={{ color: "#fff" }}
+                >
+                  CNN News
+                </span>
               </div>
-              <div className="home__container--test-bottom-slider">
-                <div>
-                  <div className="home__container--test-bottom-quote">
-                    <div>
-                      <img
-                        src={require("./../assets/img/blue-quote.png")}
-                        alt=""
-                      />
-                    </div>
-                    <div>
-                      <img
-                        src={require("./../assets/img/blue-quote.png")}
-                        alt=""
-                      />
-                    </div>
+            </div>
+            <div className="home__container--test-bottom-slider">
+              <div>
+                <div className="home__container--test-bottom-quote">
+                  <div>
+                    <img
+                      src={require("./../assets/img/blue-quote.png")}
+                      alt=""
+                    />
                   </div>
-                  <p>
-                    Working together with our partners, we can help make
-                    pregnancy and childbirth a safe, healthy, and joyful
-                    experience for women.
-                  </p>
-                  <span className="home__container--test-span-one">
-                    Musa Hammed /
-                  </span>
-                  <span className="home__container--test-span-two">
-                    TVC Studio
-                  </span>
-                </div>
-              </div>
-              <div className="home__container--test-bottom-slider">
-                <div>
-                  <div className="home__container--test-bottom-quote">
-                    <div>
-                      <img
-                        src={require("./../assets/img/blue-quote.png")}
-                        alt=""
-                      />
-                    </div>
-                    <div>
-                      <img
-                        src={require("./../assets/img/blue-quote.png")}
-                        alt=""
-                      />
-                    </div>
+                  <div>
+                    <img
+                      src={require("./../assets/img/blue-quote.png")}
+                      alt=""
+                    />
                   </div>
-                  <p>
-                    Working together with our partners, we can help make
-                    pregnancy and childbirth a safe, healthy, and joyful
-                    experience for women.
-                  </p>
-                  <span className="home__container--test-span-one">
-                    Jen Park /
-                  </span>
-                  <span className="home__container--test-span-two">
-                    NewYork Times
-                  </span>
                 </div>
+                <p>
+                  Working together with our partners, we can help make pregnancy
+                  and childbirth a safe, healthy, and joyful experience for
+                  women.
+                </p>
+                <span className="home__container--test-span-one">
+                  Musa Hammed /
+                </span>
+                <span className="home__container--test-span-two">
+                  TVC Studio
+                </span>
               </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className="home__container--test-bottom-slider">
-                <div style={{ backgroundColor: "#0f295a" }}>
-                  <div className="home__container--test-bottom-quote">
-                    <div>
-                      <img
-                        src={require("./../assets/img/white-quote.png")}
-                        alt=""
-                      />
-                    </div>
-                    <div>
-                      <img
-                        src={require("./../assets/img/white-quote.png")}
-                        alt=""
-                      />
-                    </div>
+            </div>
+            <div className="home__container--test-bottom-slider">
+              <div>
+                <div className="home__container--test-bottom-quote">
+                  <div>
+                    <img
+                      src={require("./../assets/img/blue-quote.png")}
+                      alt=""
+                    />
                   </div>
-                  <p style={{ color: "#fff" }}>
-                    Working together with our partners, we can help make
-                    pregnancy and childbirth a safe, healthy, and joyful
-                    experience for women.
-                  </p>
-
-                  <span
-                    className="home__container--test-span-one"
-                    style={{ color: "#fff" }}
-                  >
-                    Chidi Ogwu /
-                  </span>
-                  <span
-                    className="home__container--test-span-two"
-                    style={{ color: "#fff" }}
-                  >
-                    CNN News
-                  </span>
-                </div>
-              </div>
-              <div className="home__container--test-bottom-slider">
-                <div>
-                  <div className="home__container--test-bottom-quote">
-                    <div>
-                      <img
-                        src={require("./../assets/img/blue-quote.png")}
-                        alt=""
-                      />
-                    </div>
-                    <div>
-                      <img
-                        src={require("./../assets/img/blue-quote.png")}
-                        alt=""
-                      />
-                    </div>
+                  <div>
+                    <img
+                      src={require("./../assets/img/blue-quote.png")}
+                      alt=""
+                    />
                   </div>
-                  <p>
-                    Working together with our partners, we can help make
-                    pregnancy and childbirth a safe, healthy, and joyful
-                    experience for women.
-                  </p>
-                  <span className="home__container--test-span-one">
-                    Musa Hammed /
-                  </span>
-                  <span className="home__container--test-span-two">
-                    TVC Studio
-                  </span>
                 </div>
+                <p>
+                  Working together with our partners, we can help make pregnancy
+                  and childbirth a safe, healthy, and joyful experience for
+                  women.
+                </p>
+                <span className="home__container--test-span-one">
+                  Jen Park /
+                </span>
+                <span className="home__container--test-span-two">
+                  NewYork Times
+                </span>
               </div>
-              <div className="home__container--test-bottom-slider">
-                <div>
-                  <div className="home__container--test-bottom-quote">
-                    <div>
-                      <img
-                        src={require("./../assets/img/blue-quote.png")}
-                        alt=""
-                      />
-                    </div>
-                    <div>
-                      <img
-                        src={require("./../assets/img/blue-quote.png")}
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <p>
-                    Working together with our partners, we can help make
-                    pregnancy and childbirth a safe, healthy, and joyful
-                    experience for women.
-                  </p>
-                  <span className="home__container--test-span-one">
-                    Jen Park /
-                  </span>
-                  <span className="home__container--test-span-two">
-                    NewYork Times
-                  </span>
-                </div>
-              </div>
-            </Carousel.Item>
-          </Carousel>
+            </div>
+          </AliceCarousel>
         </div>
       </div>
       <div className="home__container--partners main__container">

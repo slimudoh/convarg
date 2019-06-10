@@ -1,6 +1,7 @@
 import React from "react";
 import { HashRouter, Switch, Route } from "react-router-dom";
-import "../../node_modules/bootstrap/dist/css/bootstrap.css";
+// import "../../node_modules/bootstrap/dist/css/bootstrap.css";
+import "./../assets/css/reset.css";
 import "./../assets/css/app.css";
 
 import Home from "./../components/home";

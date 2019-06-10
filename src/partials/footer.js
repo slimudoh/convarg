@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <div className="footer main__container">
       <div className="footer__top">
-        <div className="footer__top__one">
+        <div className="footer__top--one">
           <div className="footer__top--menu-company">
             Bridging the gap. Thinking outside the box. Leveraging Technology.
             Building Partnerships. Leading Progressive Action.

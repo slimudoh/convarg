@@ -46,10 +46,10 @@ export default function SearchNav() {
       <div className="main__nav--container-mobile main__container">
         <div className="main__nav--mobile-logo">
           <Link to="/">
-            <img src={require("./../assets/img/convarg.png")} alt="logo" />
+            <img src={require("./../assets/img/logo.png")} alt="logo" />
           </Link>
         </div>
-        <div className="main__nav--mobile-menu" onClick={showMobile}>
+        <div className="main__nav--mobile-menu-black" onClick={showMobile}>
           <div style={{ width: "90%" }} />
           <div style={{ width: "70%" }} />
           <div style={{ width: "40%" }} />

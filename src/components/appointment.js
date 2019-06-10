@@ -108,122 +108,124 @@ export default function Appointment() {
             ) : null}
           </div>
         </div>
-        <div className="appoint__container--box">
-          <div className="appoint__container--box-left">
-            <div className="appoint__container--box-left-up">
-              <span>Convarg with</span>
-              <div>
-                <div className="appoint__container--box-left-upleft">
-                  Muyiwa Afolabi
-                  <div>
-                    <img src={require("./../assets/img/image1.png")} alt="" />
+        <div className="appoint__container--box-parent">
+          <div className="appoint__container--box">
+            <div className="appoint__container--box-left">
+              <div className="appoint__container--box-left-up">
+                <span>Convarg with</span>
+                <div>
+                  <div className="appoint__container--box-left-upleft">
+                    Muyiwa Afolabi
+                    <div>
+                      <img src={require("./../assets/img/image1.png")} alt="" />
+                    </div>
                   </div>
-                </div>
-                <div className="appoint__container--box-left-upright">
-                  <img
-                    src={require("./../assets/img/marker.png")}
-                    alt=""
-                    style={{ width: "23px" }}
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="appoint__container--box-left-down">
-              <div>
-                <span>Call Duration</span>
-                <p>30 Minutes</p>
-              </div>
-              <div>
-                <span>Cost</span>
-                <p>N30,000</p>
-              </div>
-            </div>
-          </div>
-          <div className="appoint__container--box-right">
-            <div className="appoint__container--box-right-up">
-              Propose Meeting Times
-            </div>
-            <div className="appoint__container--box-right-down">
-              <div>Option One</div>
-              <div>
-                <span>Date</span>
-                <p>Jul 25th, 2019</p>
-              </div>
-              <div style={{ maxWidth: "100px" }}>
-                <div className="appoint__container--box-right-downtime">
-                  <span>Time</span>
-                  <p>9:00PM</p>
-                </div>
-                <div className="appoint__container--box-right-downicon">
-                  <div>
+                  <div className="appoint__container--box-left-upright">
                     <img
-                      src={require("./../assets/img/down.png")}
+                      src={require("./../assets/img/marker.png")}
                       alt=""
-                      style={{ width: "9px" }}
+                      style={{ width: "23px" }}
                     />
                   </div>
                 </div>
               </div>
+              <div className="appoint__container--box-left-down">
+                <div>
+                  <span>Call Duration</span>
+                  <p>30 Minutes</p>
+                </div>
+                <div>
+                  <span>Cost</span>
+                  <p>N30,000</p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div
-          className="appoint__container--box"
-          style={{
-            background: "#F9FAFB",
-            borderTop: "1px solid rgba(0, 0, 0, .1)"
-          }}
-        >
-          <div className="appoint__container--box-left">
-            <div className="appoint__container--box-left-up">
-              <span>Convarg with</span>
-              <div>
-                <div className="appoint__container--box-left-upleft">
-                  Wale Olajumoke
-                  <div>
-                    <img
-                      src={require("./../assets/img/image2.png")}
-                      style={{ width: "38px" }}
-                      alt=""
-                    />
+            <div className="appoint__container--box-right">
+              <div className="appoint__container--box-right-up">
+                Propose Meeting Times
+              </div>
+              <div className="appoint__container--box-right-down">
+                <div>Option One</div>
+                <div>
+                  <span>Date</span>
+                  <p>Jul 25th, 2019</p>
+                </div>
+                <div style={{ maxWidth: "100px" }}>
+                  <div className="appoint__container--box-right-downtime">
+                    <span>Time</span>
+                    <p>9:00PM</p>
+                  </div>
+                  <div className="appoint__container--box-right-downicon">
+                    <div>
+                      <img
+                        src={require("./../assets/img/down.png")}
+                        alt=""
+                        style={{ width: "9px" }}
+                      />
+                    </div>
                   </div>
                 </div>
-                <div className="appoint__container--box-left-upright" />
-              </div>
-            </div>
-            <div className="appoint__container--box-left-down">
-              <div>
-                <span>Call Duration</span>
-                <p>30 Minutes</p>
-              </div>
-              <div>
-                <span>Cost</span>
-                <p>N30,000</p>
               </div>
             </div>
           </div>
-          <div className="appoint__container--box-right">
-            <div className="appoint__container--box-right-up">
-              Propose Meeting Times
-            </div>
-            <div className="appoint__container--box-right-down">
-              <div>Option One</div>
-              <div>
-                <span>Date</span>
-                <p>Jul 25th, 2019</p>
-              </div>
-              <div style={{ maxWidth: "100px" }}>
-                <div className="appoint__container--box-right-downtime">
-                  <span>Time</span>
-                  <p>9:00PM</p>
+          <div
+            className="appoint__container--box"
+            style={{
+              background: "#F9FAFB",
+              borderTop: "1px solid rgba(0, 0, 0, .1)"
+            }}
+          >
+            <div className="appoint__container--box-left">
+              <div className="appoint__container--box-left-up">
+                <span>Convarg with</span>
+                <div>
+                  <div className="appoint__container--box-left-upleft">
+                    Wale Olajumoke
+                    <div>
+                      <img
+                        src={require("./../assets/img/image2.png")}
+                        style={{ width: "38px" }}
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div className="appoint__container--box-left-upright" />
                 </div>
-                <div className="appoint__container--box-right-downicon">
-                  <div>
-                    <img
-                      src={require("./../assets/img/down.png")}
-                      alt=""
-                      style={{ width: "9px" }}
-                    />
+              </div>
+              <div className="appoint__container--box-left-down">
+                <div>
+                  <span>Call Duration</span>
+                  <p>30 Minutes</p>
+                </div>
+                <div>
+                  <span>Cost</span>
+                  <p>N30,000</p>
+                </div>
+              </div>
+            </div>
+            <div className="appoint__container--box-right">
+              <div className="appoint__container--box-right-up">
+                Propose Meeting Times
+              </div>
+              <div className="appoint__container--box-right-down">
+                <div>Option One</div>
+                <div>
+                  <span>Date</span>
+                  <p>Jul 25th, 2019</p>
+                </div>
+                <div style={{ maxWidth: "100px" }}>
+                  <div className="appoint__container--box-right-downtime">
+                    <span>Time</span>
+                    <p>9:00PM</p>
+                  </div>
+                  <div className="appoint__container--box-right-downicon">
+                    <div>
+                      <img
+                        src={require("./../assets/img/down.png")}
+                        alt=""
+                        style={{ width: "9px" }}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -231,7 +233,7 @@ export default function Appointment() {
           </div>
         </div>
       </div>
-      <div style={{ height: "100px" }} />
+      <div style={{ height: "50px" }} />
       <Footer />
     </div>
   );

@@ -253,10 +253,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div
-        className="about__container--signup"
-        style={{ paddingRight: "90px", paddingLeft: "90px" }}
-      >
+      <div className="about__container--signup">
         <div className="about__container--signup-container">
           <div>
             <div className="about__container--signup-top-image">

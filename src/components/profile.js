@@ -71,6 +71,7 @@ export default function Profile() {
                 <div>Business Development</div>
               </div>
             </div>
+            <div className="book__meeting--mobile">Book A Meeting</div>
           </div>
           <div className="profile__container--left-bio">
             <span>BIOGRAPHY</span>
