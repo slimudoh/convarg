@@ -63,9 +63,9 @@ export default function Login(props) {
     window.scrollTo(0, 0);
   };
 
-  // useEffect(() => {
-  //   goToTop();
-  // }, []);
+  useEffect(() => {
+    goToTop();
+  }, []);
 
   return (
     <div className="auth__container">
